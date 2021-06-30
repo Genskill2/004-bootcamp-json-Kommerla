@@ -6,3 +6,7 @@ def load_journal():
     correlation = json.loads(f)
     print(correlation)
     f.close()
+def compute_phi():
+    m_1 = correlation['carrot']
+    m_2 = correlation['squirrel']
+    
