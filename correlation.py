@@ -2,7 +2,7 @@
 import json
 
 def load_journal(json):
-    json = 'journal.json'
+    json = journal.json
     f = open(json)
     correlation = json.load(f)
     return correlation
