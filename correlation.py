@@ -1,7 +1,7 @@
 # Add the functions in this file
 import json
 
-def load_journal():
+def load_journal(journal.json):
     f.open("journal.json","r")
     correlation = json.loads(f)
     print(correlation)
@@ -9,4 +9,3 @@ def load_journal():
 def compute_phi():
     m_1 = correlation['carrot']
     m_2 = correlation['squirrel']
-    
