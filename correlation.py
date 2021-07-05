@@ -2,10 +2,9 @@
 import json
 
 def load_journal(journal.json):
-    f.open("journal.json","r")
+    f = open('journal.json')
     correlation = json.loads(f)
-    print(correlation)
-    f.close()
+    return correlation
 def compute_phi():
     m_1 = correlation['carrot']
     m_2 = correlation['squirrel']
