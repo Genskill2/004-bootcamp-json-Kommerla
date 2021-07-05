@@ -4,5 +4,5 @@ import json
 def load_journal(json):
     json = 'journal.json'
     f = open(json)
-    correlation = json.loads(f)
+    correlation = json.load(f)
     return correlation
