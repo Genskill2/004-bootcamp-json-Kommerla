@@ -34,5 +34,4 @@ def compute_phi(correlation):
             n0x += 1
 
         return n11,n00,n10,n01,n1x,n0x,nx1,nx0
-
-     return row = ((n11*n00)-(n10*n01)) / sqrt(n1x*n0x*nx1*nx0)
+     return row = (n11*n00 - n10*n01)/sqrt(n1x*n0x*nx1*nx0)
