@@ -1,8 +1,8 @@
 # Add the functions in this file
 import json
 
-def load_journal(json):
-    f = open(json)
+def load_journal(jsonfile):
+    f = open(jsonfile)
     correlation = json.load(f)
     return correlation
 
