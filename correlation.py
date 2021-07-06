@@ -21,11 +21,11 @@ def compute_phi(correlation):
             n1x += 1
             n10 += 1
             nx0 += 1
-        elif b in c:
+        if b in c:
             nx1 += 1
             n01 += 1
             n0x += 1
-        elif a,b in c:
+        if a,b in c:
             n11 += 1
             n1x += 1
         else:
@@ -35,4 +35,4 @@ def compute_phi(correlation):
 
         return n11,n00,n10,n01,n1x,n0x,nx1,nx0
 
-     return row = ((n11*n00)-(n10*n01)) / sqrt(n1x*n0x*nx1*nx0)      
+     return row = ((n11*n00)-(n10*n01)) / sqrt(n1x*n0x*nx1*nx0)
